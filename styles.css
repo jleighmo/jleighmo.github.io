@@ -2,6 +2,10 @@ body
 	{background: pink;
 
 	color: black;
+
+	font-weight: 100;
+
+	text-align: center; 
 }
 
 p
