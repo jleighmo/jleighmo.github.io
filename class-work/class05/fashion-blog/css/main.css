@@ -14,7 +14,7 @@ body {
 
 .container {
 	margin: auto;
-	padding: 54;
+	padding: 54px;
 	width: 1080px;
 }
 
@@ -34,15 +34,10 @@ h1, h2, h3 {
 }
 
 h1 {
-	color: #444444;
-	font-family: "Lato"
+	color: #d00;
+	font-family: "Lato";
 	font-size: 54px;
 	line-height: 1.5
-}
-
-h1 a: hover {
-
-	color: #d00;
 }
 
 h2 {
@@ -81,12 +76,6 @@ a {
 
 a:hover {
 	color: #d00;
-}
-
-.container {
-	padding: 54px;
-	width: 1080px;
-	border-left: 6px solid #dddddd;
 }
 
 .header h2 {
