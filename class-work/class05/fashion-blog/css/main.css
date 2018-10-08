@@ -1,6 +1,5 @@
 aside {
 	float: right;
-	height: 50px;
   	width: 250px;
 }
 
@@ -15,7 +14,7 @@ body {
 
 .container {
 	margin: auto;
-	padding: 54
+	padding: 54;
 	width: 1080px;
 }
 
@@ -35,11 +34,19 @@ h1, h2, h3 {
 }
 
 h1 {
+	color: #444444;
+	font-family: "Lato"
 	font-size: 54px;
+	line-height: 1.5
+}
+
+h1 a: hover {
+
+	color: #d00;
 }
 
 h2 {
-	color: #000000;
+	color: #cccccc;
 	display: inline-block;
 	font-size: 36px;
 }
@@ -73,7 +80,7 @@ a {
 }
 
 a:hover {
-	color: #a00;
+	color: #d00;
 }
 
 .container {
@@ -83,10 +90,14 @@ a:hover {
 }
 
 .header h2 {
-	color: #888;
+	color: #000;
 	font-size: 27px;
 	font-weight: 27px;
 	margin-bottom: 9px;
+}
+
+.clear {
+    clear: both;
 }
 
 .footer {
@@ -96,24 +107,20 @@ a:hover {
 .header .nav a {
 	font-size: 22px;
 	margin-right: 16px;
-	color: #dddddd;
-	border-bottom: 2px solid #eeeeee;
+	color: #000;
 }
 
 nav {
-	background: black;
+	color: #000;
 }
 
 nav a { 
-	background: #000;
-	color: #fff;
+	color: #000;
 	font-size: 24px;
-	display: inline-black;
-	padding: 50px; 
+	display: inline;
 }
 
 header .nav a:hover {
-	background: #900;
 	color: #000000;
 	border-bottom: 2px solid #bbbbbb;
 }
@@ -121,30 +128,25 @@ header .nav a:hover {
 title
 
 {
-	color: #dd0
-    font-size: 54px
-    font-weight: 300
+	color: #000;
+    font-size: 36px;
+    font-weight: 300;
 }
 
 .article {
 	border-bottom: 1px solid #dddddd;
+	border-left: solid 6px #dddddd;
 	margin: 54px 0;
-	padding-bottom: 27px;
+	padding-bottom: 54px;
+	width: 720px;
 }
 
 section {
 	float: left;
-	height: 50px;
   	width: 700px;
 }
 
-.clear {
-    clear: both;
-}
 
-.clearfix:after {
-	  content:"Sarte's List";
-	  display:table;
-	  clear:both;
-	}
+
+
 
