@@ -6,3 +6,51 @@ font-family: 'Merriweather', serif;
 font-family: 'Source Sans Pro', sans-serif;
 
 */
+
+aside	{
+
+	float: right;
+
+}
+
+.banner {
+	background: url(../img/coworking);
+}
+
+body	{
+	font-family: "Source Sans Pro";
+}
+
+	.bold-link {
+		font-weight: bold;
+	}
+
+
+body, h1, h2, h3 
+{
+	margin: 0;
+}
+
+h1	{
+	color: #ffff00;
+	float: left;
+  	font-family: "Merriweather"; 	
+}
+
+header {
+	background: #000;
+	overflow: auto;
+	border-bottom: solid yellow 3px;
+	}
+
+nav	{
+	float: right;
+  	font-family: "Oswald"; 
+	}
+
+
+nav a {
+
+	color: #fff;
+}
+
