@@ -15,8 +15,18 @@
 
 var count = 0
 
-$('#click-me').click(/* What goes here?! */)
+$('#click-me').click(clickCount)
 
 function clickCount() {
-
+count = count + 1
+$('#click-num').html(count)
+if(count === 5) {$('body').css('backgroundColor', 'red')
+}
+else if(count === 10) {$('body').css('backgroundColor', 'green')	
+}
+else if(count === 15) {$('body').css('backgroundColor', 'blue')	
+}
+else if (count === 20) {
+$('body').addClass('rotate') }
+else {$('body').css('backgroundColor', 'black')}
 }

@@ -19,3 +19,28 @@
     - Set lights = 'on'
     - Remove the CSS class 'dark' from both the <body> and <button> elements
 */
+
+var lights = 'on'
+
+$('#light-switch').click(flipTheSwitch)
+
+function flipTheSwitch (){
+  if (lights === 'on') {lights = 'off'
+    $('body, button').addClass('dark')
+  } else {
+    lights = 'on'
+    $('body, button').removeClass('dark')
+  }
+}
+
+/*
+if(count === 5) {$('body').css('backgroundColor', 'red')
+}
+else if(count === 10) {$('body').css('backgroundColor', 'green')  
+}
+  $('p').addClass('bold-text')
+{$('body').css('backgroundColor', 'green')
+}
+
+$('#light-switch').click(flipTheSwitch) 
+*/
