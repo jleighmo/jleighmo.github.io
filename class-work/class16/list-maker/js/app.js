@@ -22,10 +22,10 @@
 
 */
 
-$('#add-item').click(addItem)
+$('#clickme').click(addItem)
 
 function addItem () {
-var Item = $('#add-item').val()
-$('ul').append('<p>list</p>')
+var item = $('#item').val()
+$('ul').append('<li>'+ item + '</li>')
 
 }
