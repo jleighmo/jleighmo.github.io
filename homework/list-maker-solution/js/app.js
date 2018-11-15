@@ -22,13 +22,36 @@
 
 */
 
-$('#clickme').click(addItem)
 
-function addItem () {
-var item = $('#item').val()
-$('ul').append('<li>'+ item + '</li>')
-$('#item').focus().val('')
+// event handler for the #clickme button
+$('#clickme').click(handleClick)
 
+function handleClick() {
+	// create a variable, newItem, that stores the user's input
+	var newItem = $('#item').val()
+
+	// if the user has not entered a value, trigger alert
+	if (newItem.length === 0) {
+		alert('You must enter a value!')
+	} else {
+		// call the appendItem function and pass it newItem as a variable
+		appendItem(newItem)
+
+		// focuses on the <input> so user doesn't have to click back into it, also sets the value of the input to an empty string (clearing it)
+		$('#item')
+			.focus()
+			.val('')
+	}
 }
 
+// appends a new <li> element containing the user's text to #list
+function appendItem(item) {
+	$('#list').append('<li>' + item + '</li>')
+}
 
+// removes dynamically-created <li> elements on click
+$(document).on('click', 'li', handleRemove)
+
+function handleRemove() {
+	$(this).remove()
+}
