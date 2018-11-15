@@ -1,5 +1,6 @@
 /*
-  User Flow:
+  User Flow:var 
+  event.preventDefault()
   1: User enters numerical value into #newEntry
   2: User pushes enter key (submits the form)
   3: A <div> containg the value from #newEntry is appended to #entries
@@ -17,3 +18,17 @@
 */
 
 var total = 0
+
+$('#entry').submit(handleSubmit)
+
+function handleSubmit(event) {
+  event.preventDefault()
+  var newEntry = $('#newEntry').val()
+  newEntry = parseInt(newEntry)
+  $('#entries').append('<div>' + newEntry + '</div>')
+  total = total + newEntry
+  $('#total').html(total)
+  $('#newEntry').val('')
+}
+
+
