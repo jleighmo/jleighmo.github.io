@@ -28,7 +28,12 @@ function addItem () {
 var item = $('#item').val()
 $('ul').append('<li>'+ item + '</li>')
 $('#item').focus().val('')
+}
 
+$(document).on('click', 'li', handleRemove)
+
+function handleRemove () {
+  $(this).remove()
 }
 
 
