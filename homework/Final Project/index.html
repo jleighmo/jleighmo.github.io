@@ -5,7 +5,6 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="styles.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-  	<link href="lib/css/emoji.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,15 +16,46 @@
 				<div class="blurb">
 					<p>Our mission is to add transparency to the rental market in New York City and Brooklyn. We are a community who empowers renters to make informed decisions about the properties and neighborhoods they want to live in, before signing a lease.</p>
 
-						<section class="callout">
-					 		<button>Rate Your Landlord NOW!</button>
-  						</section>
-				</div>
-			</div>
 	</section>
 		<div class="wrapper">
      
-   
+ <div class="container">
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+      </div>
+     
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
 
 
 <footer>
@@ -36,6 +66,11 @@
 
 <script src="scripts/main.js"></script>  <script src="lib/js/config.js"></script>
   		
+  <script src="lib/js/config.js"></script>
+  <script src="lib/js/util.js"></script>
+  <script src="lib/js/jquery.emojiarea.js"></script>
+  <script src="lib/js/emoji-picker.js"></script>
+
 
 </body>
 </html>
